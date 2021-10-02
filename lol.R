@@ -1,4 +1,5 @@
 setwd("D:/SY vit/DS/DS HA")
+# Find Boston.csv in the github repo
 # Load the BostonHousing data and assign it to the variable BostonHousing 
 BostonHousing <- read.csv("Boston.csv")
 BostonHousing
@@ -15,7 +16,7 @@ summary(BostonHousing)
 # Description
 describe(BostonHousing)
 
-# Check for any NA’s in the dataframe
+# Check for any NAâ€™s in the dataframe
 library(Amelia)
 missmap(BostonHousing,col=c('yellow','black'),y.at=1,y.labels='',legend=TRUE)
 
